@@ -17,3 +17,8 @@ npm install
 
 
 ```
+
+# How test
+```
+node test.js
+```

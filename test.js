@@ -1,7 +1,9 @@
 
 var a=["./components/Linux_Shell/ReverseShell.js",
 "./components/Linux_Shell/LinuxCommands.js",
-"./components/Linux_Shell/PowershellCommands.js"];
+"./components/Linux_Shell/PowershellCommands.js",
+"./components/Linux_Shell/TtySpawnShell.js"
+];
 
 for(var k in a)
 {
