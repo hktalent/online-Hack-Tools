@@ -12,22 +12,40 @@ var a=["./components/file_transfer/File_transfer.js",
 "./components/encoding/URL.js"
 ];
 // create markdown
-var bMkMarkDow=1;
+var bMkMarkDow=1,szHost = "exploit-poc.com",nPort = 4444,szFileName = 'targetPswd.txt',szTestStr=`{"k":"=this is test&","xx":"=999"}`;
 
 if(bMkMarkDow)
 {
+    console.log("## test data info\n```\nHost: " +szHost+ "\nport:" +nPort+ "\nfileName:"+szFileName+"\ntest str:"+szTestStr+"\n```\n");
     for(var k in a)
     {
         var o = require(a[k]),x = a[k].split("/");
         x=x[x.length - 1];
-        x = x.split(".")[0];
+        x = o['tags'] || x.split(".")[0];
         console.log("## " + x);
+        for(var i in o)
+        {
+            if('tags' != i)
+            {
+                if('getCode' == i)
+                {
+                    var x6m = o[i](szHost,nPort,szFileName);
+                    for(var m in x6m)
+                    {
+                        console.log('#### ' + m);
+                        console.log('```\n' + x6m[m] +'\n```\n');    
+                    }
+                    
+                }
+                else console.log("- " + i);
+            }
+        }
     }
 }
 // test
 else
 {
-    var s1 = `{"k":"=this is test&","xx":"=999"}`,s, szKey='51pwn.com',aErr={};
+    var s1 = szTestStr,s, szKey='51pwn.com',aErr={};
     for(var k in a)
     {
         console.log("test " + a[k]);
@@ -61,7 +79,7 @@ else
         }
         else if("getCode" in o)
         {
-            console.log(o.getCode("exploit-poc",444,'targetPswd.txt'));
+            console.log(o.getCode(szHost,nPort,szFileName));
         }
         else
         {
