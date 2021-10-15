@@ -1,0 +1,313 @@
+    aix/ppc/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    android/meterpreter/reverse_http                    Run a meterpreter server in Android. Tunnel communication over HTTP
+    android/meterpreter/reverse_https                   Run a meterpreter server in Android. Tunnel communication over HTTPS
+    android/meterpreter/reverse_tcp                     Run a meterpreter server in Android. Connect back stager
+    android/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell
+    android/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell
+    android/meterpreter_reverse_tcp                     Connect back to the attacker and spawn a Meterpreter shell
+    android/shell/reverse_http                          Spawn a piped command shell (sh). Tunnel communication over HTTP
+    android/shell/reverse_https                         Spawn a piped command shell (sh). Tunnel communication over HTTPS
+    android/shell/reverse_tcp                           Spawn a piped command shell (sh). Connect back stager
+    apple_ios/aarch64/meterpreter_reverse_http          Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/aarch64/meterpreter_reverse_https         Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/aarch64/meterpreter_reverse_tcp           Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/aarch64/shell_reverse_tcp                 Connect back to attacker and spawn a command shell
+    apple_ios/armle/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/armle/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload (stageless)
+    apple_ios/armle/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload (stageless)
+    bsd/sparc/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    bsd/vax/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    bsd/x64/shell_reverse_ipv6_tcp                      Connect back to attacker and spawn a command shell over IPv6
+    bsd/x64/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    bsd/x64/shell_reverse_tcp_small                     Connect back to attacker and spawn a command shell
+    bsd/x86/metsvc_reverse_tcp                          Stub payload for interacting with a Meterpreter Service
+    bsd/x86/shell/reverse_ipv6_tcp                      Spawn a command shell (staged). Connect back to the attacker over IPv6
+    bsd/x86/shell/reverse_tcp                           Spawn a command shell (staged). Connect back to the attacker
+    bsd/x86/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    bsd/x86/shell_reverse_tcp_ipv6                      Connect back to attacker and spawn a command shell over IPv6
+    bsdi/x86/shell/reverse_tcp                          Spawn a command shell (staged). Connect back to the attacker
+    bsdi/x86/shell_reverse_tcp                          Connect back to attacker and spawn a command shell
+    cmd/mainframe/reverse_shell_jcl                     Provide JCL which creates a reverse shell This implementation does not include ebcdic character translation, so a client with translation capabilities is required. MSF handles this automatically.
+    cmd/unix/pingback_reverse                           Creates a socket, send a UUID, then exit
+    cmd/unix/reverse                                    Creates an interactive shell through two inbound connections
+    cmd/unix/reverse_awk                                Creates an interactive shell via GNU AWK
+    cmd/unix/reverse_bash                               Creates an interactive shell via bash's builtin /dev/tcp. This will not work on circa 2009 and older Debian-based Linux distributions (including Ubuntu) because they compile bash without the /dev/tcp feature.
+    cmd/unix/reverse_bash_telnet_ssl                    Creates an interactive shell via mkfifo and telnet. This method works on Debian and other systems compiled without /dev/tcp support. This module uses the '-z' option included on some systems to encrypt using SSL.
+    cmd/unix/reverse_bash_udp                           Creates an interactive shell via bash's builtin /dev/udp. This will not work on circa 2009 and older Debian-based Linux distributions (including Ubuntu) because they compile bash without the /dev/udp feature.
+    cmd/unix/reverse_jjs                                Connect back and create a command shell via jjs
+    cmd/unix/reverse_ksh                                Connect back and create a command shell via Ksh. Note: Although Ksh is often available, please be aware it isn't usually installed by default.
+    cmd/unix/reverse_lua                                Creates an interactive shell via Lua
+    cmd/unix/reverse_ncat_ssl                           Creates an interactive shell via ncat, utilizing ssl mode
+    cmd/unix/reverse_netcat                             Creates an interactive shell via netcat
+    cmd/unix/reverse_netcat_gaping                      Creates an interactive shell via netcat
+    cmd/unix/reverse_nodejs                             Continually listen for a connection and spawn a command shell via nodejs
+    cmd/unix/reverse_openssl                            Creates an interactive shell through two inbound connections
+    cmd/unix/reverse_perl                               Creates an interactive shell via perl
+    cmd/unix/reverse_perl_ssl                           Creates an interactive shell via perl, uses SSL
+    cmd/unix/reverse_php_ssl                            Creates an interactive shell via php, uses SSL
+    cmd/unix/reverse_python                             Connect back and create a command shell via Python
+    cmd/unix/reverse_python_ssl                         Creates an interactive shell via python, uses SSL, encodes with base64 by design.
+    cmd/unix/reverse_r                                  Connect back and create a command shell via R
+    cmd/unix/reverse_ruby                               Connect back and create a command shell via Ruby
+    cmd/unix/reverse_ruby_ssl                           Connect back and create a command shell via Ruby, uses SSL
+    cmd/unix/reverse_socat_udp                          Creates an interactive shell via socat
+    cmd/unix/reverse_ssh                                Connect back and create a command shell via SSH
+    cmd/unix/reverse_ssl_double_telnet                  Creates an interactive shell through two inbound connections, encrypts using SSL via "-z" option
+    cmd/unix/reverse_stub                               Creates an interactive shell through an inbound connection (stub only, no payload)
+    cmd/unix/reverse_tclsh                              Creates an interactive shell via Tclsh
+    cmd/unix/reverse_zsh                                Connect back and create a command shell via Zsh. Note: Although Zsh is often available, please be aware it isn't usually installed by default.
+    cmd/windows/powershell_reverse_tcp                  Interacts with a powershell session on an established socket connection
+    cmd/windows/reverse_lua                             Creates an interactive shell via Lua
+    cmd/windows/reverse_perl                            Creates an interactive shell via perl
+    cmd/windows/reverse_powershell                      Connect back and create a command shell via Powershell
+    cmd/windows/reverse_ruby                            Connect back and create a command shell via Ruby
+    firefox/shell_reverse_tcp                           Creates an interactive shell via Javascript with access to Firefox's XPCOM API
+    generic/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    java/jsp_shell_reverse_tcp                          Connect back to attacker and spawn a command shell
+    java/meterpreter/reverse_http                       Run a meterpreter server in Java. Tunnel communication over HTTP
+    java/meterpreter/reverse_https                      Run a meterpreter server in Java. Tunnel communication over HTTPS
+    java/meterpreter/reverse_tcp                        Run a meterpreter server in Java. Connect back stager
+    java/shell/reverse_tcp                              Spawn a piped command shell (cmd.exe on Windows, /bin/sh everywhere else). Connect back stager
+    java/shell_reverse_tcp                              Connect back to attacker and spawn a command shell
+    linux/aarch64/meterpreter/reverse_tcp               Inject the mettle server payload (staged). Connect back to the attacker
+    linux/aarch64/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload (stageless)
+    linux/aarch64/shell/reverse_tcp                     dup2 socket in x12, then execve. Connect back to the attacker
+    linux/aarch64/shell_reverse_tcp                     Connect back to attacker and spawn a command shell
+    linux/armbe/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/armbe/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter/reverse_tcp                 Inject the mettle server payload (staged). Connect back to the attacker
+    linux/armle/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/armle/shell/reverse_tcp                       dup2 socket in r12, then execve. Connect back to the attacker
+    linux/armle/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    linux/mips64/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mips64/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mips64/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter/reverse_tcp                Inject the mettle server payload (staged). Connect back to the attacker
+    linux/mipsbe/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsbe/shell/reverse_tcp                      Spawn a command shell (staged). Connect back to the attacker
+    linux/mipsbe/shell_reverse_tcp                      Connect back to attacker and spawn a command shell
+    linux/mipsle/meterpreter/reverse_tcp                Inject the mettle server payload (staged). Connect back to the attacker
+    linux/mipsle/meterpreter_reverse_http               Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/meterpreter_reverse_https              Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/meterpreter_reverse_tcp                Run the Meterpreter / Mettle server payload (stageless)
+    linux/mipsle/shell/reverse_tcp                      Spawn a command shell (staged). Connect back to the attacker
+    linux/mipsle/shell_reverse_tcp                      Connect back to attacker and spawn a command shell
+    linux/ppc/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/ppc64/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    linux/ppc64le/meterpreter_reverse_http              Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc64le/meterpreter_reverse_https             Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppc64le/meterpreter_reverse_tcp               Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_http            Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_https           Run the Meterpreter / Mettle server payload (stageless)
+    linux/ppce500v2/meterpreter_reverse_tcp             Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter/reverse_tcp                   Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x64/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/x64/pingback_reverse_tcp                      Connect back to attacker and report UUID (Linux x64)
+    linux/x64/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    linux/x64/shell_reverse_ipv6_tcp                    Connect back to attacker and spawn a command shell over IPv6
+    linux/x64/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/x86/meterpreter/reverse_ipv6_tcp              Inject the mettle server payload (staged). Connect back to attacker over IPv6
+    linux/x86/meterpreter/reverse_nonx_tcp              Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter/reverse_tcp                   Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter/reverse_tcp_uuid              Inject the mettle server payload (staged). Connect back to the attacker
+    linux/x86/meterpreter_reverse_http                  Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/meterpreter_reverse_https                 Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/meterpreter_reverse_tcp                   Run the Meterpreter / Mettle server payload (stageless)
+    linux/x86/metsvc_reverse_tcp                        Stub payload for interacting with a Meterpreter Service
+    linux/x86/shell/reverse_ipv6_tcp                    Spawn a command shell (staged). Connect back to attacker over IPv6
+    linux/x86/shell/reverse_nonx_tcp                    Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell/reverse_tcp_uuid                    Spawn a command shell (staged). Connect back to the attacker
+    linux/x86/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    linux/x86/shell_reverse_tcp_ipv6                    Connect back to attacker and spawn a command shell over IPv6
+    linux/zarch/meterpreter_reverse_http                Run the Meterpreter / Mettle server payload (stageless)
+    linux/zarch/meterpreter_reverse_https               Run the Meterpreter / Mettle server payload (stageless)
+    linux/zarch/meterpreter_reverse_tcp                 Run the Meterpreter / Mettle server payload (stageless)
+    mainframe/shell_reverse_tcp                         Listen for a connection and spawn a command shell. This implementation does not include ebcdic character translation, so a client with translation capabilities is required. MSF handles this automatically.
+    multi/meterpreter/reverse_http                      Handle Meterpreter sessions regardless of the target arch/platform. Tunnel communication over HTTP
+    multi/meterpreter/reverse_https                     Handle Meterpreter sessions regardless of the target arch/platform. Tunnel communication over HTTPS
+    netware/shell/reverse_tcp                           Connect to the NetWare console (staged). Connect back to the attacker
+    nodejs/shell_reverse_tcp                            Creates an interactive shell via nodejs
+    nodejs/shell_reverse_tcp_ssl                        Creates an interactive shell via nodejs, uses SSL
+    osx/armle/execute/reverse_tcp                       Spawn a command shell (staged). Connect back to the attacker
+    osx/armle/shell/reverse_tcp                         Spawn a command shell (staged). Connect back to the attacker
+    osx/armle/shell_reverse_tcp                         Connect back to attacker and spawn a command shell
+    osx/ppc/shell/reverse_tcp                           Spawn a command shell (staged). Connect back to the attacker
+    osx/ppc/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    osx/x64/dupandexecve/reverse_tcp                    dup2 socket in edi, then execve. Connect, read length, read buffer, execute
+    osx/x64/dupandexecve/reverse_tcp_uuid               dup2 socket in edi, then execve. Connect back to the attacker with UUID Support (OSX x64)
+    osx/x64/meterpreter/reverse_tcp                     Inject the mettle server payload (staged). Connect, read length, read buffer, execute
+    osx/x64/meterpreter/reverse_tcp_uuid                Inject the mettle server payload (staged). Connect back to the attacker with UUID Support (OSX x64)
+    osx/x64/meterpreter_reverse_http                    Run the Meterpreter / Mettle server payload (stageless)
+    osx/x64/meterpreter_reverse_https                   Run the Meterpreter / Mettle server payload (stageless)
+    osx/x64/meterpreter_reverse_tcp                     Run the Meterpreter / Mettle server payload (stageless)
+    osx/x64/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    osx/x86/bundleinject/reverse_tcp                    Inject a custom Mach-O bundle into the exploited process. Connect, read length, read buffer, execute
+    osx/x86/isight/reverse_tcp                          Inject a Mach-O bundle to capture a photo from the iSight (staged). Connect, read length, read buffer, execute
+    osx/x86/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    osx/x86/vforkshell/reverse_tcp                      Call vfork() if necessary and spawn a command shell (staged). Connect, read length, read buffer, execute
+    osx/x86/vforkshell_reverse_tcp                      Connect back to attacker, vfork if necessary, and spawn a command shell
+    php/meterpreter/reverse_tcp                         Run a meterpreter server in PHP. Reverse PHP connect back stager with checks for disabled functions
+    php/meterpreter/reverse_tcp_uuid                    Run a meterpreter server in PHP. Reverse PHP connect back stager with checks for disabled functions
+    php/meterpreter_reverse_tcp                         Connect back to attacker and spawn a Meterpreter server (PHP)
+    php/reverse_perl                                    Creates an interactive shell via perl
+    php/reverse_php                                     Reverse PHP connect back shell with checks for disabled functions
+    php/shell_findsock                                  Spawn a shell on the established connection to the webserver. Unfortunately, this payload can leave conspicuous evil-looking entries in the apache error logs, so it is probably a good idea to use a bind or reverse shell unless firewalls prevent them from working. The issue this payload takes advantage of (CLOEXEC flag not set on sockets) appears to have been patched on the Ubuntu version of Apache and may not work on other Debian-based distributions. Only tested on Apache but it might work on other web servers that leak file descriptors to child processes.
+    python/meterpreter/reverse_http                     Run a meterpreter server in Python (compatible with 2.5-2.7 & 3.1+). Tunnel communication over HTTP
+    python/meterpreter/reverse_https                    Run a meterpreter server in Python (compatible with 2.5-2.7 & 3.1+). Tunnel communication over HTTP using SSL
+    python/meterpreter/reverse_tcp                      Run a meterpreter server in Python (compatible with 2.5-2.7 & 3.1+). Connect back to the attacker
+    python/meterpreter/reverse_tcp_ssl                  Run a meterpreter server in Python (compatible with 2.5-2.7 & 3.1+). Reverse Python connect back stager using SSL
+    python/meterpreter/reverse_tcp_uuid                 Run a meterpreter server in Python (compatible with 2.5-2.7 & 3.1+). Connect back to the attacker with UUID Support
+    python/meterpreter_reverse_http                     Connect back to the attacker and spawn a Meterpreter shell
+    python/meterpreter_reverse_https                    Connect back to the attacker and spawn a Meterpreter shell
+    python/meterpreter_reverse_tcp                      Connect back to the attacker and spawn a Meterpreter shell
+    python/pingback_reverse_tcp                         Connects back to the attacker, sends a UUID, then terminates
+    python/shell_reverse_tcp                            Creates an interactive shell via Python, encodes with base64 by design. Compatible with Python 2.4-2.7 and 3.4+.
+    python/shell_reverse_tcp_ssl                        Creates an interactive shell via Python, uses SSL, encodes with base64 by design. Compatible with Python 2.6-2.7 and 3.4+.
+    python/shell_reverse_udp                            Creates an interactive shell via Python, encodes with base64 by design. Compatible with Python 2.6-2.7 and 3.4+.
+    r/shell_reverse_tcp                                 Connect back and create a command shell via R
+    ruby/pingback_reverse_tcp                           Connect back to the attacker, sends a UUID, then terminates
+    ruby/shell_reverse_tcp                              Connect back and create a command shell via Ruby
+    ruby/shell_reverse_tcp_ssl                          Connect back and create a command shell via Ruby, uses SSL
+    solaris/sparc/shell_reverse_tcp                     Connect back to attacker and spawn a command shell
+    solaris/x86/shell_reverse_tcp                       Connect back to attacker and spawn a command shell
+    windows/dllinject/reverse_hop_http                  Inject a DLL via a reflective loader. Tunnel communication over an HTTP or HTTPS hop point. Note that you must first upload data/hop/hop.php to the PHP server you wish to use as a hop.
+    windows/dllinject/reverse_http                      Inject a DLL via a reflective loader. Tunnel communication over HTTP (Windows wininet)
+    windows/dllinject/reverse_http_proxy_pstore         Inject a DLL via a reflective loader. Tunnel communication over HTTP
+    windows/dllinject/reverse_ipv6_tcp                  Inject a DLL via a reflective loader. Connect back to the attacker over IPv6
+    windows/dllinject/reverse_nonx_tcp                  Inject a DLL via a reflective loader. Connect back to the attacker (No NX)
+    windows/dllinject/reverse_ord_tcp                   Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp                       Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_allports              Inject a DLL via a reflective loader. Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/dllinject/reverse_tcp_dns                   Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_rc4                   Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_rc4_dns               Inject a DLL via a reflective loader. Connect back to the attacker
+    windows/dllinject/reverse_tcp_uuid                  Inject a DLL via a reflective loader. Connect back to the attacker with UUID Support
+    windows/dllinject/reverse_winhttp                   Inject a DLL via a reflective loader. Tunnel communication over HTTP (Windows winhttp)
+    windows/meterpreter/reverse_hop_http                Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over an HTTP or HTTPS hop point. Note that you must first upload data/hop/hop.php to the PHP server you wish to use as a hop.
+    windows/meterpreter/reverse_http                    Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP (Windows wininet)
+    windows/meterpreter/reverse_http_proxy_pstore       Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP
+    windows/meterpreter/reverse_https                   Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTPS (Windows wininet)
+    windows/meterpreter/reverse_https_proxy             Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP using SSL with custom proxy support
+    windows/meterpreter/reverse_ipv6_tcp                Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker over IPv6
+    windows/meterpreter/reverse_named_pipe              Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker via a named pipe pivot
+    windows/meterpreter/reverse_nonx_tcp                Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker (No NX)
+    windows/meterpreter/reverse_ord_tcp                 Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker
+    windows/meterpreter/reverse_tcp                     Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker
+    windows/meterpreter/reverse_tcp_allports            Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/meterpreter/reverse_tcp_dns                 Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker
+    windows/meterpreter/reverse_tcp_rc4                 Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker
+    windows/meterpreter/reverse_tcp_rc4_dns             Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker
+    windows/meterpreter/reverse_tcp_uuid                Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker with UUID Support
+    windows/meterpreter/reverse_winhttp                 Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP (Windows winhttp)
+    windows/meterpreter/reverse_winhttps                Inject the Meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTPS (Windows winhttp)
+    windows/meterpreter_reverse_http                    Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/meterpreter_reverse_https                   Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/meterpreter_reverse_ipv6_tcp                Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/meterpreter_reverse_tcp                     Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/metsvc_reverse_tcp                          Stub payload for interacting with a Meterpreter Service
+    windows/patchupdllinject/reverse_ipv6_tcp           Inject a custom DLL into the exploited process. Connect back to the attacker over IPv6
+    windows/patchupdllinject/reverse_nonx_tcp           Inject a custom DLL into the exploited process. Connect back to the attacker (No NX)
+    windows/patchupdllinject/reverse_ord_tcp            Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp                Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_allports       Inject a custom DLL into the exploited process. Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/patchupdllinject/reverse_tcp_dns            Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_rc4            Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_rc4_dns        Inject a custom DLL into the exploited process. Connect back to the attacker
+    windows/patchupdllinject/reverse_tcp_uuid           Inject a custom DLL into the exploited process. Connect back to the attacker with UUID Support
+    windows/patchupmeterpreter/reverse_ipv6_tcp         Inject the meterpreter server DLL (staged). Connect back to the attacker over IPv6
+    windows/patchupmeterpreter/reverse_nonx_tcp         Inject the meterpreter server DLL (staged). Connect back to the attacker (No NX)
+    windows/patchupmeterpreter/reverse_ord_tcp          Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp              Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_allports     Inject the meterpreter server DLL (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/patchupmeterpreter/reverse_tcp_dns          Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_rc4          Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_rc4_dns      Inject the meterpreter server DLL (staged). Connect back to the attacker
+    windows/patchupmeterpreter/reverse_tcp_uuid         Inject the meterpreter server DLL (staged). Connect back to the attacker with UUID Support
+    windows/peinject/reverse_ipv6_tcp                   Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker over IPv6
+    windows/peinject/reverse_named_pipe                 Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker via a named pipe pivot
+    windows/peinject/reverse_nonx_tcp                   Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker (No NX)
+    windows/peinject/reverse_ord_tcp                    Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker
+    windows/peinject/reverse_tcp                        Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker
+    windows/peinject/reverse_tcp_allports               Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/peinject/reverse_tcp_dns                    Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker
+    windows/peinject/reverse_tcp_rc4                    Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker
+    windows/peinject/reverse_tcp_rc4_dns                Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker
+    windows/peinject/reverse_tcp_uuid                   Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker with UUID Support
+    windows/pingback_reverse_tcp                        Connect back to attacker and report UUID (Windows x86)
+    windows/powershell_reverse_tcp                      Listen for a connection and spawn an interactive powershell session
+    windows/shell/reverse_ipv6_tcp                      Spawn a piped command shell (staged). Connect back to the attacker over IPv6
+    windows/shell/reverse_nonx_tcp                      Spawn a piped command shell (staged). Connect back to the attacker (No NX)
+    windows/shell/reverse_ord_tcp                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp                           Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_allports                  Spawn a piped command shell (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/shell/reverse_tcp_dns                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_rc4                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_rc4_dns                   Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_uuid                      Spawn a piped command shell (staged). Connect back to the attacker with UUID Support
+    windows/shell/reverse_udp                           Spawn a piped command shell (staged). Connect back to the attacker with UUID Support
+    windows/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+    windows/upexec/reverse_ipv6_tcp                     Uploads an executable and runs it (staged). Connect back to the attacker over IPv6
+    windows/upexec/reverse_nonx_tcp                     Uploads an executable and runs it (staged). Connect back to the attacker (No NX)
+    windows/upexec/reverse_ord_tcp                      Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp                          Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_allports                 Uploads an executable and runs it (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/upexec/reverse_tcp_dns                      Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_rc4                      Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_rc4_dns                  Uploads an executable and runs it (staged). Connect back to the attacker
+    windows/upexec/reverse_tcp_uuid                     Uploads an executable and runs it (staged). Connect back to the attacker with UUID Support
+    windows/upexec/reverse_udp                          Uploads an executable and runs it (staged). Connect back to the attacker with UUID Support
+    windows/vncinject/reverse_hop_http                  Inject a VNC Dll via a reflective loader (staged). Tunnel communication over an HTTP or HTTPS hop point. Note that you must first upload data/hop/hop.php to the PHP server you wish to use as a hop.
+    windows/vncinject/reverse_http                      Inject a VNC Dll via a reflective loader (staged). Tunnel communication over HTTP (Windows wininet)
+    windows/vncinject/reverse_http_proxy_pstore         Inject a VNC Dll via a reflective loader (staged). Tunnel communication over HTTP
+    windows/vncinject/reverse_ipv6_tcp                  Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker over IPv6
+    windows/vncinject/reverse_nonx_tcp                  Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker (No NX)
+    windows/vncinject/reverse_ord_tcp                   Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp                       Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_allports              Inject a VNC Dll via a reflective loader (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/vncinject/reverse_tcp_dns                   Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_rc4                   Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_rc4_dns               Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker
+    windows/vncinject/reverse_tcp_uuid                  Inject a VNC Dll via a reflective loader (staged). Connect back to the attacker with UUID Support
+    windows/vncinject/reverse_winhttp                   Inject a VNC Dll via a reflective loader (staged). Tunnel communication over HTTP (Windows winhttp)
+    windows/x64/meterpreter/reverse_http                Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/meterpreter/reverse_https               Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/meterpreter/reverse_named_pipe          Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker via a named pipe pivot
+    windows/x64/meterpreter/reverse_tcp                 Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker (Windows x64)
+    windows/x64/meterpreter/reverse_tcp_rc4             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker
+    windows/x64/meterpreter/reverse_tcp_uuid            Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/meterpreter/reverse_winhttp             Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTP (Windows x64 winhttp)
+    windows/x64/meterpreter/reverse_winhttps            Inject the meterpreter server DLL via the Reflective Dll Injection payload (staged). Requires Windows XP SP2 or newer. Tunnel communication over HTTPS (Windows x64 winhttp)
+    windows/x64/meterpreter_reverse_http                Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/x64/meterpreter_reverse_https               Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/x64/meterpreter_reverse_ipv6_tcp            Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/x64/meterpreter_reverse_tcp                 Connect back to attacker and spawn a Meterpreter shell. Requires Windows XP SP2 or newer.
+    windows/x64/peinject/reverse_named_pipe             Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker via a named pipe pivot
+    windows/x64/peinject/reverse_tcp                    Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker (Windows x64)
+    windows/x64/peinject/reverse_tcp_rc4                Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker
+    windows/x64/peinject/reverse_tcp_uuid               Inject a custom native PE file into the exploited process using a reflective PE loader. The reflective PE loader will execute the pre-mapped PE image starting from the address of entry after performing image base relocation and API address resolution. This module requires a PE file that contains relocation data and a valid (uncorrupted) import table. PE files with CLR(C#/.NET executables), bounded imports, and TLS callbacks are not currently supported. Also PE files which use resource loading might crash. . Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/pingback_reverse_tcp                    Connect back to attacker and report UUID (Windows x64)
+    windows/x64/powershell_reverse_tcp                  Listen for a connection and spawn an interactive powershell session
+    windows/x64/shell/reverse_tcp                       Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker (Windows x64)
+    windows/x64/shell/reverse_tcp_rc4                   Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker
+    windows/x64/shell/reverse_tcp_uuid                  Spawn a piped command shell (Windows x64) (staged). Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/shell_reverse_tcp                       Connect back to attacker and spawn a command shell (Windows x64)
+    windows/x64/vncinject/reverse_http                  Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/vncinject/reverse_https                 Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTP (Windows x64 wininet)
+    windows/x64/vncinject/reverse_tcp                   Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker (Windows x64)
+    windows/x64/vncinject/reverse_tcp_rc4               Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker
+    windows/x64/vncinject/reverse_tcp_uuid              Inject a VNC Dll via a reflective loader (Windows x64) (staged). Connect back to the attacker with UUID Support (Windows x64)
+    windows/x64/vncinject/reverse_winhttp               Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTP (Windows x64 winhttp)
+    windows/x64/vncinject/reverse_winhttps              Inject a VNC Dll via a reflective loader (Windows x64) (staged). Tunnel communication over HTTPS (Windows x64 winhttp)

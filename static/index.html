@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>51pwn, exploit-poc: online Hack-tools</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+input{width: 100%;}
+
+header {
+  padding: 1px ;
+  text-align: center;
+}
+
+nav {
+  float: left;
+  width: 10%;
+  height: 100%; /* only for demonstration, should be removed */
+  
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 0 10px 6px 10px;
+  width: 90%;
+  /* only for demonstration, should be removed */
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section,article{height: 100%;}
+
+footer {
+  
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+.shadow{
+animation: animateleft 0.4s;
+}
+
+/*https://css-tricks.com/snippets/css/css-box-shadow/*/
+.shadow {
+/*
+-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;*/
+
+/*  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+
+   -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+
+</style>
+</head>
+<body>
+<header class=shadow>
+  <h2>51pwn: online hack tools</h2>
+</header>
+
+<section>
+  <nav class=shadow>
+    <input value="key1 key2 ..." onchange="">
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
+

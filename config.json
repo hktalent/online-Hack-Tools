@@ -1,0 +1,6 @@
+{
+  "session": {
+    "name": "pwned",
+    "secret": "mysecret"
+  }
+}

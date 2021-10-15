@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "hash-wasm": "^4.9.0",
+    "myapp_51pwn": "^1.1.0"
+  }
+}
