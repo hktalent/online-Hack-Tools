@@ -22,4 +22,4 @@ npm install
 ```
 node test.js
 ```
-#include "testInfo.md"
+.. include:: testInfo.md
