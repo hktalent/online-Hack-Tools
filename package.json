@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "hash-wasm": "^4.9.0",
-    "myapp_51pwn": "^1.1.0"
+    "crypto": "^1.0.1",
+    "myapp_51pwn": "^1.1.0",
+    "sm3": "^1.0.3"
   }
 }
