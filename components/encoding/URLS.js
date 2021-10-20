@@ -35,7 +35,35 @@ function stringFromUTF8Array(data)
   return str;
 }
 
+String.prototype.hex2bin = function ()
+{
+	var j;
+    var hexes = this.match(/.{1,4}/g) || [];
+    var back = "";
+    for(j = 0; j<hexes.length; j++) {
+        back += String.fromCharCode(parseInt(hexes[j], 16));
+    }
+    return back;
+}
+
+String.prototype.bin2hex = function ()
+{
+
+	var hex, i;
+    var result = "";
+    for (i=0; i<this.length; i++) {
+        hex = this.charCodeAt(i).toString(16);
+        result += ("000"+hex).slice(-4);
+    }
+    return result
+
+}
+
 module.exports = {
+    "bin2hex_unicode":function(s){return s.bin2hex()},
+    "hex_unicode2bin":function(s){return s.hex2bin()},
+    "encodeURIComponent":encodeURIComponent,
+    "decodeURIComponent":decodeURIComponent,
     "url parms to json":function(s){var o = {},a=s.split("&");
     for(var i =0;i<a.length;i++)
     {

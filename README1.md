@@ -12,8 +12,12 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 # install openssl
 $ brew install openssl
 
+# ruby: https://github.com/frohoff/ciphr
+gem install ciphr
+
 # install npm mod
 $ npm install
+$ npm install -g pm2
 
 # merge md
 $ cat README1.md testInfo.md >README.md
